@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import org.curiousworks.BlueMarble;
 import org.junit.Test;
 
 public class BlueMarbleTest {
@@ -40,7 +39,7 @@ public class BlueMarbleTest {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 		return reader.readLine();
 	}
-	
+
 	@Test
 	public void testCaption() throws Exception {
 		BlueMarble blueMarble = new BlueMarble();
@@ -48,11 +47,11 @@ public class BlueMarbleTest {
 		blueMarble.getImage();
 		assertTrue(blueMarble.getCaption().contains("NASA"));
 	}
-	
+
 	@Test
 	public void testEnhanced() throws Exception {
 		BlueMarble blueMarble = new BlueMarble();
-		blueMarble.setDate("2018-09-23"); //there are no enhanced images in the database after September 2018 
+		blueMarble.setDate("2018-09-23"); // there are no enhanced images in the database after September 2018
 		blueMarble.setEnhanced(true);
 		InputStream image = blueMarble.getImage();
 		assertTrue(getFirstLineOfFile(image).contains("PNG"));
