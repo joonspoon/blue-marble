@@ -1,5 +1,5 @@
 # To run within Eclipse:
-1. Clone this repository.
+1. Fork, then clone this repository.
 2. From Eclipse, File > Import > Existing Maven Projects.
 3. Under src/main/java > hellofx, right click Launcher, and Run As > Java Application.
 
