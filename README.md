@@ -6,7 +6,7 @@
 # To run from command line, using Maven:
 ```
 git clone https://github.com/joonspoon/javafx-base
-cd javafx-base
+cd blue-marble
 mvn clean javafx:run
 ```
 # To complete this exercise:
