@@ -7,6 +7,8 @@ import java.io.InputStreamReader;
 
 import org.junit.Test;
 
+import hellofx.BlueMarble;
+
 public class BlueMarbleTest {
 
 	@Test
